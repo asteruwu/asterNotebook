@@ -253,7 +253,7 @@ String 类型的有序集合。
       4. **去重**：每个桶**单独统计**该桶内的“最长连续零”；
       5. **抗干扰**：使用调和平均把所有桶的数据合起来算一个总数，得到最终估算的基数。
       
-      <img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Redis.drawio.svg" alt="Redis.drawio" style="zoom:120%;" />
+      <img src="../dio图表/SRE/Redis.drawio.svg" alt="Redis.drawio" style="zoom:120%;" />
   - **特点**：
 
     - **不存数据**：只存特征，无法取回原数据。
@@ -660,7 +660,7 @@ print(sum, diff) -- 15, 5
 
 # 高可用与集群部署
 
-<img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Redis-主从+哨兵.drawio.svg" alt="Redis-主从+哨兵.drawio" style="zoom:120%;" />
+<img src="../dio图表/SRE/Redis-主从+哨兵.drawio.svg" alt="Redis-主从+哨兵.drawio" style="zoom:120%;" />
 
 ## 主从复制
 
@@ -889,7 +889,7 @@ connected_slaves:1
 - **应对方法：**
   1. **缓存空对象：**
   
-     <img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Redis-缓存穿透+空对象.drawio.svg" alt="Redis-缓存穿透+空对象.drawio" style="zoom:120%;" />
+     <img src="../dio图表/SRE/Redis-缓存穿透+空对象.drawio.svg" alt="Redis-缓存穿透+空对象.drawio" style="zoom:120%;" />
   
      - **原理：** 当数据库查不到数据时，不直接返回，而是将 key 的值设为 `null` 或特定标识符写回 Redis，并设置一个较短的过期时间（如 30秒）。
      - **优点：** 实现简单。
@@ -897,7 +897,7 @@ connected_slaves:1
   
   2. **布隆过滤器：**
   
-     <img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Redis-缓存穿透+布隆过滤器.drawio.svg" alt="Redis-缓存穿透+布隆过滤器.drawio" style="zoom:120%;" />
+     <img src="../dio图表/SRE/Redis-缓存穿透+布隆过滤器.drawio.svg" alt="Redis-缓存穿透+布隆过滤器.drawio" style="zoom:120%;" />
   
      - **原理：** 在访问缓存之前，先经过一个布隆过滤器。它能以极小的空间快速判断“这个 ID 肯定不存在”或“可能存在”。如果判断不存在，直接拦截，不查缓存也不查库。
      - **优点：** 内存占用极少，拦截效率极高。
@@ -926,7 +926,7 @@ connected_slaves:1
 
        > 使用Go Singleflight优化互斥锁，实现**合并读**
 
-       <img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Redis-Singleflight.drawio.svg" alt="Redis-Singleflight.drawio" style="zoom:120%;" />
+       <img src="../dio图表/SRE/Redis-Singleflight.drawio.svg" alt="Redis-Singleflight.drawio" style="zoom:120%;" />
 
        **优点：**第一个请求查到数据后直接唤醒所有等待中的请求并返回数据，消去剩余请求的重试+等待时间。
     
@@ -1117,7 +1117,7 @@ connected_slaves:1
 
 ### redsync库
 
-<img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Redis-redsync.drawio.svg" alt="Redis-redsync.drawio" style="zoom:100%;" />
+<img src="../dio图表/SRE/Redis-redsync.drawio.svg" alt="Redis-redsync.drawio" style="zoom:100%;" />
 
 ```go
 package main
@@ -1317,7 +1317,7 @@ func main() {
     6. 否则，拒绝。
 - **使用Lua脚本：**确保更新与消费令牌的过程是原子性的，避免出现并发竞态，导致限流失效。
 
-<img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Redis-令牌桶.drawio.svg" alt="Redis-令牌桶.drawio" style="zoom:120%;" />
+<img src="../dio图表/SRE/Redis-令牌桶.drawio.svg" alt="Redis-令牌桶.drawio" style="zoom:120%;" />
 
 > 示例
 
@@ -1403,7 +1403,7 @@ func AllowRequest(userId string) bool {
 
 ### 布隆过滤器
 
-<img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Redis-布隆过滤器.drawio.svg" alt="Redis-布隆过滤器.drawio" style="zoom:120%;" />
+<img src="../dio图表/SRE/Redis-布隆过滤器.drawio.svg" alt="Redis-布隆过滤器.drawio" style="zoom:120%;" />
 
 **定位：**不是最终的数据存储源，而是用于保护后端存储（DB/Cache）免受无效请求轰炸的**防御组件**。
 

@@ -81,7 +81,7 @@ func inorderTraversal(root *TreeNode) []int {
 
 # 判断对称树
 
-<img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Go_interface-LC101.drawio.svg" alt="Go_interface-LC101.drawio" style="zoom:120%;" />
+<img src="../../dio图表/SRE/Go_interface-LC101.drawio.svg" alt="Go_interface-LC101.drawio" style="zoom:120%;" />
 
 Given the `root` of a binary tree, *check whether it is a mirror of itself* (i.e., symmetric around its center).
 
@@ -219,7 +219,7 @@ A mapping of digits to letters (just like on the telephone buttons) is given bel
 
 
 
-<img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Go_interface-LC17.drawio.svg" alt="Go_interface-LC17.drawio" style="zoom:120%;" />
+<img src="../../dio图表/SRE/Go_interface-LC17.drawio.svg" alt="Go_interface-LC17.drawio" style="zoom:120%;" />
 
 ```go
 func letterCombinations(digits string) []string {

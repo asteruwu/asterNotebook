@@ -101,7 +101,7 @@ helloworld
   - 若执行方式不同，shell环境也会不同（`bash`和`source`）。
 
 
-  - ![shell.dio.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\shell.dio.drawio.svg)
+  - ![shell.dio.drawio](../../dio图表/SRE/shell.dio.drawio.svg)
 
   - `bash`会**启动一个子shell**，但执行脚本后则返回父shell进程，子shell的变量不会对父shell产生影响：
 

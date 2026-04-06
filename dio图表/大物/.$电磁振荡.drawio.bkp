@@ -1,0 +1,46 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="第 1 页" id="DLsroT2eJ7QopSEJHzxo">
+    <mxGraphModel dx="719" dy="498" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-1" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.miscellaneous.batteryStack;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="570" y="313" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="SuAs9X-1HZBRLKHPZleE-2" target="SuAs9X-1HZBRLKHPZleE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-2" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.capacitors.capacitor_1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="430" y="290" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-4" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.inductors.inductor_5;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="280" y="336" width="100" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.12;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="SuAs9X-1HZBRLKHPZleE-5" target="SuAs9X-1HZBRLKHPZleE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-5" value="" style="html=1;shape=mxgraph.electrical.electro-mechanical.twoWaySwitch;aspect=fixed;elSwitchState=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="442.5" y="388" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.88;exitDx=0;exitDy=0;entryX=0;entryY=0.645;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="SuAs9X-1HZBRLKHPZleE-5" target="SuAs9X-1HZBRLKHPZleE-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.645;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="SuAs9X-1HZBRLKHPZleE-2" target="SuAs9X-1HZBRLKHPZleE-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;$$\varepsilon$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="323" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-11" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;$$C$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="300" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;$$S$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="400" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SuAs9X-1HZBRLKHPZleE-13" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;$$L$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="323" width="70" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

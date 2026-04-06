@@ -26,7 +26,7 @@
 
 # 系统整体架构概览
 
-<img src="C:\Users\86133\Desktop\学习\dio图表\MicroService\product_catalog-高并发读写架构设计.drawio.svg" alt="product_catalog-高并发读写架构设计.drawio" style="zoom:120%;" />
+<img src="../../../dio图表/MicroService/product_catalog-高并发读写架构设计.drawio.svg" alt="product_catalog-高并发读写架构设计.drawio" style="zoom:120%;" />
 
 | 存储   | 角色       | 一致性               |
 | ------ | ---------- | -------------------- |

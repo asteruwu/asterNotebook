@@ -1,6 +1,6 @@
 # Part1. 基础必备
 
-![Nginx-nginx处理请求流程图.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\Nginx-nginx处理请求流程图.drawio.svg)
+![Nginx-nginx处理请求流程图.drawio](../dio图表/SRE/Nginx-nginx处理请求流程图.drawio.svg)
 
 ## Nginx架构与基本概念
 
@@ -50,7 +50,7 @@ Nginx 的功能通过模块实现，主要分类：
 
 ## 配置文件基础
 
-<img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Nginx配置.drawio.svg" alt="Nginx配置.drawio"  />
+<img src="../dio图表/SRE/Nginx配置.drawio.svg" alt="Nginx配置.drawio"  />
 
 - **main**：进程数、日志路径等。
 
@@ -172,7 +172,7 @@ log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
 
 ### 反向代理
 
-<img src="C:\Users\86133\Desktop\学习\dio图表\SRE\Nginx-反向代理.drawio.svg" alt="Nginx-反向代理.drawio"  />
+<img src="../dio图表/SRE/Nginx-反向代理.drawio.svg" alt="Nginx-反向代理.drawio"  />
 
 - **`porxy_pass`：**把用户请求转发给后端服务器。
 
@@ -191,17 +191,17 @@ location /api/ {									#匹配以api开头的路径，专门处理API请求
   - **轮询（round robin）**（默认）
      顺序分配请求。
 
-  ![Nginx-负载均衡_轮询.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\Nginx-负载均衡_轮询.drawio.svg)
+  ![Nginx-负载均衡_轮询.drawio](../dio图表/SRE/Nginx-负载均衡_轮询.drawio.svg)
 
   - **最少连接（least_conn）**
      新请求分给连接数最少的服务器。
 
-  ![Nginx-负载均衡_least_conn.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\Nginx-负载均衡_least_conn.drawio.svg)
+  ![Nginx-负载均衡_least_conn.drawio](../dio图表/SRE/Nginx-负载均衡_least_conn.drawio.svg)
 
   - **IP 哈希（ip_hash）**
      根据客户端 IP 分配，保证会话粘性。
 
-  ![Nginx-负载均衡_ip_hash.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\Nginx-负载均衡_ip_hash.drawio.svg)
+  ![Nginx-负载均衡_ip_hash.drawio](../dio图表/SRE/Nginx-负载均衡_ip_hash.drawio.svg)
 
 - **`upstream{}`：**定义后端服务器池。
 
@@ -223,7 +223,7 @@ upstream backend_app {
 
 **对比：**
 
-![Nginx-sendfile对比.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\Nginx-sendfile对比.drawio.svg)
+![Nginx-sendfile对比.drawio](../dio图表/SRE/Nginx-sendfile对比.drawio.svg)
 
 
 
@@ -237,4 +237,4 @@ upstream backend_app {
 - Nginx 的事件循环模型，避免线程/进程阻塞，每个 worker 可管理成千上万连接。
 - 沿用IO模型中的多路复用。
 
-![Nginx-epoll.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\Nginx-epoll.drawio.svg)
+![Nginx-epoll.drawio](../dio图表/SRE/Nginx-epoll.drawio.svg)

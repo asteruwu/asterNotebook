@@ -1,6 +1,6 @@
 # Blocking I/O
 
-![TCP_IP.dio-BIO.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-BIO.drawio.svg)
+![TCP_IP.dio-BIO.drawio](../dio图表/SRE/TCP_IP.dio-BIO.drawio.svg)
 
 - **流程**：
   1. 用户线程调用 `recvfrom( )` 等待数据。
@@ -12,7 +12,7 @@
 
 # Non-Blocking I/O
 
-![TCP_IP.dio-NIO.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-NIO.drawio.svg)
+![TCP_IP.dio-NIO.drawio](../dio图表/SRE/TCP_IP.dio-NIO.drawio.svg)
 
 - **流程**：
   1. 用户线程调用 `recvfrom( )`，若数据未就绪，内核立即返回 `EWOULDBLOCK`。
@@ -23,7 +23,7 @@
 
 # I/O Multiplexing多路复用
 
-![TCP_IP.dio-Multiplexing.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-Multiplexing.drawio.svg)
+![TCP_IP.dio-Multiplexing.drawio](../dio图表/SRE/TCP_IP.dio-Multiplexing.drawio.svg)
 
 - **核心**：通过 `select`/`poll`/`epoll` 监听多个 I/O 事件，一个线程可以处理多个I/O操作。
 - **流程**： 

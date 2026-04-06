@@ -1,0 +1,130 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="第 1 页" id="3WO4Pnws5LS_XMb1S_Cu">
+    <mxGraphModel dx="1303" dy="903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QEvBI9kE2yPTll31ww4c-2" value="" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="450" width="480" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-1" value="" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="840" width="760" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-3" value="" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="200" width="280" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-4" value="" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="20" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-5" value="连接器 Connector&#xa;TCP 建连 · 身份鉴权 · 权限树拉取" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1181.5" y="60" width="199" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-6" value="解析器 Parser&#xa;词法分析 · 语法分析 · 生成 AST" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1181.5" y="269" width="199" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-7" value="优化器 Optimizer&#xa;Cost-Based · Join Reordering&#xa;索引选择 · 输出执行计划" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1185.5" y="384" width="189" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-8" value="执行器 Executor&#xa;权限复核 · 调用 Handler API" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1175.75" y="520" width="208.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-9" value="Binlog 模块&#xa;逻辑日志归档 · 主从复制总线" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1193" y="657.5" width="174" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-10" value="Buffer Pool&#xa;数据页缓存 · 脏页管理" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="510" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-11" value="Undo Log&#xa;旧值镜像 · MVCC 版本链" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="660" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-12" value="Redo Log&#xa;物理增量 · WAL · 2PC 状态机" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="682" y="660" width="165" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-13" value=".ibd 数据文件" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="513" y="874.5" width="127" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-14" value="Redo Log 文件" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="697" y="873" width="135" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-15" value="Binlog 文件" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="874.5" width="127.5" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-16" value="Undo Tablespace" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="905.5" y="873" width="129" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-17" value="SQL 请求" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-5" target="QEvBI9kE2yPTll31ww4c-6">
+          <mxGeometry x="-0.5139" y="-1" relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-18" value="AST" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-6" target="QEvBI9kE2yPTll31ww4c-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-19" value="Execution Plan" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-7" target="QEvBI9kE2yPTll31ww4c-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-20" value="Handler API" style="startArrow=none;endArrow=block;entryX=1;entryY=0.5;rounded=0;entryDx=0;entryDy=0;labelBackgroundColor=light-dark(#f5f5f5, #ededed);exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-8" target="QEvBI9kE2yPTll31ww4c-10">
+          <mxGeometry x="0.2154" y="-2" relative="1" as="geometry">
+            <mxPoint x="1176" y="525" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-21" value="结果集返回" style="startArrow=none;endArrow=block;exitX=1;exitY=0.75;entryX=0;entryY=0.75;rounded=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;labelBackgroundColor=light-dark(#f5f5f5, #ededed);" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-10" target="QEvBI9kE2yPTll31ww4c-8">
+          <mxGeometry x="0.1092" y="-2" relative="1" as="geometry">
+            <mxPoint x="1048.375" y="555" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-22" value="① 写前备份旧值" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0;exitY=1;entryX=0.5;entryY=0;rounded=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;labelBackgroundColor=light-dark(#f5f5f5, #ededed);" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-8" target="QEvBI9kE2yPTll31ww4c-11">
+          <mxGeometry x="0.3232" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-24" value="③ Prepare 预提交" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.31;exitY=1;entryX=0.27;entryY=0;rounded=0;" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-12" target="QEvBI9kE2yPTll31ww4c-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-25" value="④ 逻辑归档" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-8" target="QEvBI9kE2yPTll31ww4c-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-26" value="⑤ fsync 刷盘" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-9" target="QEvBI9kE2yPTll31ww4c-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-27" value="⑥ Commit 状态冲正" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.73;exitY=1;entryX=0.79;entryY=0;rounded=0;" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-12" target="QEvBI9kE2yPTll31ww4c-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-28" value="Checkpoint 刷脏" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.25;exitY=1;entryX=0.5;entryY=0;rounded=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-10" target="QEvBI9kE2yPTll31ww4c-13">
+          <mxGeometry x="0.3683" y="3" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-29" value="持久化" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-11" target="QEvBI9kE2yPTll31ww4c-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-30" value="存储引擎层 Engine Layer（插件式架构）" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="630" y="460" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-23" value="② 内存覆写" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0;exitY=0.25;rounded=0;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;labelBackgroundColor=light-dark(#f5f5f5, #ededed);" edge="1" parent="1" source="QEvBI9kE2yPTll31ww4c-8" target="QEvBI9kE2yPTll31ww4c-10">
+          <mxGeometry x="0.6728" y="-3" relative="1" as="geometry">
+            <mxPoint x="996.25" y="540" as="sourcePoint" />
+            <mxPoint x="716" y="560" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-33" value="核心服务层 Server Layer" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1189.5" y="180" width="183" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-35" value="客户端连接层 Connection Pool" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1169.1200000000001" y="25" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QEvBI9kE2yPTll31ww4c-36" value="文件系统层 OS File System" style="whiteSpace=wrap;strokeWidth=2;strokeColor=none;rounded=1;shadow=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="765" y="930" width="210" height="50.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

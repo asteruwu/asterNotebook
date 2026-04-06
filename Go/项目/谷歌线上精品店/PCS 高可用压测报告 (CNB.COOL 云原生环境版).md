@@ -32,7 +32,7 @@
 
 - **核心数据记录**
 
-  <img src="C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-22 225047.png" alt="屏幕截图 2026-01-22 225047" style="zoom:50%;" />
+  <img src="../../../dio图表/MicroService/屏幕截图 2026-01-22 225047.png" alt="屏幕截图 2026-01-22 225047" style="zoom:50%;" />
 
   - Requests/sec： 14k+
   - P99延迟：6.39ms
@@ -40,7 +40,7 @@
 
 - **结论**: 
 
-  ![屏幕截图 2026-01-22 225615](C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-22 225615.png)
+  ![屏幕截图 2026-01-22 225615](../../../dio图表/MicroService/屏幕截图 2026-01-22 225615.png)
 
   在开启 AOF 持久化的前提下，系统依然保持了 14k+ 的稳定 QPS。性能瓶颈主要集中在 Redis 的Lua脚本扣减环节。Go 服务端的 `gobreaker` 未触发熔断，说明 Redis 响应在 30s 超时范围内。
 
@@ -61,7 +61,7 @@
 
 - **核心数据记录**
 
-  <img src="C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-22 230535.png" alt="屏幕截图 2026-01-22 230535" style="zoom:50%;" />
+  <img src="../../../dio图表/MicroService/屏幕截图 2026-01-22 230535.png" alt="屏幕截图 2026-01-22 230535" style="zoom:50%;" />
 
   - 并发请求数：100000
 
@@ -106,9 +106,9 @@
 
 - **结论**: 相比于旧的定时轮询方案，新的 Redis Stream + Consumer Group 方案配合 `stock_dedup_log` 幂等表，也实现了真正的**“至少一次消费 (At-Least-Once)”**，在组件崩溃后能自动恢复数据。
 
-  ![屏幕截图 2026-01-22 234655](C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-22 234655.png)
+  ![屏幕截图 2026-01-22 234655](../../../dio图表/MicroService/屏幕截图 2026-01-22 234655.png)
 
-  ![屏幕截图 2026-01-22 234741](C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-22 234741.png)
+  ![屏幕截图 2026-01-22 234741](../../../dio图表/MicroService/屏幕截图 2026-01-22 234741.png)
 
   注意到图表上出现了一次ACK失败，但随后被Recover捕捉到并处理掉了pending messages.
 

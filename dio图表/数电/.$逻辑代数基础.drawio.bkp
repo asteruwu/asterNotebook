@@ -1,0 +1,70 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="与" id="SioEkMLx8IK50Yt5QmJG">
+    <mxGraphModel dx="868" dy="602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-1" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=and;" vertex="1" parent="1">
+          <mxGeometry x="265" y="265" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-2" value="与门" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="388" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-3" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;fillColor=strokeColor;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.electrical.miscellaneous.monocell_battery;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="490" y="270" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-5" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.electro-mechanical.make_contact;" vertex="1" parent="1">
+          <mxGeometry x="575" y="200" width="75" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-6" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.electro-mechanical.make_contact;" vertex="1" parent="1">
+          <mxGeometry x="720" y="200" width="75" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-7" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.miscellaneous.light_bulb;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="820" y="280" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="nyefKCnJZR0JuOPT4ymI-3" target="nyefKCnJZR0JuOPT4ymI-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="216" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="nyefKCnJZR0JuOPT4ymI-5" target="nyefKCnJZR0JuOPT4ymI-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="216" />
+              <mxPoint x="680" y="216" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="nyefKCnJZR0JuOPT4ymI-6" target="nyefKCnJZR0JuOPT4ymI-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="838" y="216" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="nyefKCnJZR0JuOPT4ymI-7" target="nyefKCnJZR0JuOPT4ymI-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="838" y="370" />
+              <mxPoint x="525" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-12" value="$$S_1$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="170" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-13" value="$$S_2$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="722.5" y="170" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-14" value="$$F$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="780" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nyefKCnJZR0JuOPT4ymI-15" value="与运算的逻辑电路" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="630" y="388" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -2,7 +2,7 @@
 
 ## 分类的IPv4地址
 
-![TCP_IP.dio-IPv4.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-IPv4.drawio.svg)
+![TCP_IP.dio-IPv4.drawio](../dio图表/SRE/TCP_IP.dio-IPv4.drawio.svg)
 
 **ClassA**
 
@@ -403,7 +403,7 @@ $$
 
 ### 工作流程
 
-![TCP_IP.dio-ARP协议工作流程.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-ARP协议工作流程.drawio.svg)
+![TCP_IP.dio-ARP协议工作流程.drawio](../dio图表/SRE/TCP_IP.dio-ARP协议工作流程.drawio.svg)
 
 1. 主机 A 要发给 192.168.1.20，但不知道其 MAC
 2. A 查本地 ARP 缓存；没有则**广播** ARP who-has (TPA=192.168.1.20)
@@ -483,7 +483,7 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 
 ### 完整路由查找流程
 
-![TCP_IP.dio-路由查找流程.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-路由查找流程.drawio.svg)
+![TCP_IP.dio-路由查找流程.drawio](../dio图表/SRE/TCP_IP.dio-路由查找流程.drawio.svg)
 
 ## 路由 - ARP协同工作
 
@@ -491,7 +491,7 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 
 ​	由路由决策（网络层）→ ARP协议（数据链路层）
 
-![TCP_IP.dio-路由-ARP协同.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-路由-ARP协同.drawio.svg)
+![TCP_IP.dio-路由-ARP协同.drawio](../dio图表/SRE/TCP_IP.dio-路由-ARP协同.drawio.svg)
 
 # ICMP
 
@@ -591,11 +591,11 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 
 ### 端口监听 - 数据交付应用流程图
 
-![TCP_IP.dio-端口监听-数据交付.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-端口监听-数据交付.drawio.svg)
+![TCP_IP.dio-端口监听-数据交付.drawio](../dio图表/SRE/TCP_IP.dio-端口监听-数据交付.drawio.svg)
 
 # NAT
 
-![TCP_IP.dio-NAT.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-NAT.drawio.svg)
+![TCP_IP.dio-NAT.drawio](../dio图表/SRE/TCP_IP.dio-NAT.drawio.svg)
 
 一种网络技术，用于在 **私有网络与公共网络之间转换 IP 地址**，建立了内网IP和公网IP之间的映射关系。
 
@@ -620,7 +620,7 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 
 ## **工作流程**
 
-![TCP_IP.dio-DNS工作流程.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-DNS工作流程.drawio.svg)
+![TCP_IP.dio-DNS工作流程.drawio](../dio图表/SRE/TCP_IP.dio-DNS工作流程.drawio.svg)
 
 1. **客户端查询**
     应用（浏览器、curl、ping 等）调用系统库（glibc → `getaddrinfo()`），触发 DNS 查询。
@@ -687,7 +687,7 @@ rtt min/avg/max/mdev = 391.669/447.068/521.212/54.521 ms
 
 ## VPN翻墙原理
 
-![TCP_IP.dio-VPN原理.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-VPN原理.drawio.svg)
+![TCP_IP.dio-VPN原理.drawio](../dio图表/SRE/TCP_IP.dio-VPN原理.drawio.svg)
 
 1. **建立 VPN 连接**
 
@@ -745,7 +745,7 @@ rtt min/avg/max/mdev = 391.669/447.068/521.212/54.521 ms
 
 采用了**请求/响应**模型，定义了Web客户端如何从Web服务器请求Web页面，以及服务器如何把Web页面传送给客户端。
 
-![TCP_IP.dio-HTTP协议.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-HTTP协议.drawio.svg)
+![TCP_IP.dio-HTTP协议.drawio](../dio图表/SRE/TCP_IP.dio-HTTP协议.drawio.svg)
 
 ## 请求方法
 
@@ -932,7 +932,7 @@ Access-Control-Allow-Headers: Content-Type
 
 ## Qos技术
 
-![TCP_IP.dio-QoS.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-QoS.drawio.svg)
+![TCP_IP.dio-QoS.drawio](../dio图表/SRE/TCP_IP.dio-QoS.drawio.svg)
 
 QoS 的目标是：**在网络资源有限的情况下，保证关键业务（如语音、视频）的网络性能**。
 

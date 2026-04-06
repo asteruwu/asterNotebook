@@ -7,7 +7,7 @@
 ---
 
 # 基础架构与核心组件
-<img src="C:\Users\86133\Desktop\学习\dio图表\SRE\RocketMQ.drawio.svg" alt="RocketMQ.drawio"/>
+<img src="../dio图表/SRE/RocketMQ.drawio.svg" alt="RocketMQ.drawio"/>
 
 ## NameServer
 
@@ -97,7 +97,7 @@
 
 ## 顺序消息
 
-![RocketMQ-线程池乱序消费示意图.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\RocketMQ-线程池乱序消费示意图.drawio.svg)
+![RocketMQ-线程池乱序消费示意图.drawio](../dio图表/SRE/RocketMQ-线程池乱序消费示意图.drawio.svg)
 
 - **核心定位**
   - 保证消费端严格按照生产端发送顺序处理消息。
@@ -115,7 +115,7 @@
 
 ## 延迟/定时消息
 
-![RocketMQ-延迟消息.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\RocketMQ-延迟消息.drawio.svg)
+![RocketMQ-延迟消息.drawio](../dio图表/SRE/RocketMQ-延迟消息.drawio.svg)
 
 - **核心定位**
   - 消息发送至 Broker 后不立即投递，延迟指定时间或到达绝对时间后才可消费。
@@ -130,7 +130,7 @@
 
 ## 事务消息
 
-![RocketMQ-事务消息.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\RocketMQ-事务消息.drawio.svg)
+![RocketMQ-事务消息.drawio](../dio图表/SRE/RocketMQ-事务消息.drawio.svg)
 
 - **核心定位**
   - 保障本地事务与消息投递的最终一致性。
@@ -165,7 +165,7 @@
 
 ## 零拷贝与高效读写机制
 
-<img src="C:\Users\86133\Desktop\学习\dio图表\SRE\RocketMQ-mmap vs 传统io.drawio.svg" alt="RocketMQ-mmap vs 传统io.drawio"  />
+<img src="../dio图表/SRE/RocketMQ-mmap vs 传统io.drawio.svg" alt="RocketMQ-mmap vs 传统io.drawio"  />
 
 - **Mmap（内存映射）**
   - **传统 IO 痛点**：读写涉及内核态与用户态间频繁数据拷贝与上下文切换。
@@ -173,7 +173,7 @@
   - **落地约束**：Mmap 对映射文件大小有 OS 限制，RocketMQ 固化 CommitLog 为 1GB、ConsumeQueue 为约 5.72MB。
 - **PageCache（页缓存）**
 
-  ![RocketMQ-page cache.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\RocketMQ-page cache.drawio.svg)
+  ![RocketMQ-page cache.drawio](../dio图表/SRE/RocketMQ-page cache.drawio.svg)
 
   - **写路径**：消息追加至 PageCache 后即返回成功，OS 后台异步刷脏至物理磁盘（异步刷盘模式）。
   - **读路径**：CommitLog 顺序追加写入，OS Read-Ahead 预读机制将后续数据提前装载至 PageCache。
@@ -208,7 +208,7 @@
   - 主从同步双写 + 双机异步刷盘，放弃单机同步刷盘的吞吐损耗。
   - 跨机器/跨可用区 PageCache 级同步复制构建双倍冗余，单机断电时另一节点持有热数据并后台刷盘。
 
-    ![RocketMQ-主从同步双写+双机异步刷盘.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\RocketMQ-主从同步双写+双机异步刷盘.drawio.svg)
+    ![RocketMQ-主从同步双写+双机异步刷盘.drawio](../dio图表/SRE/RocketMQ-主从同步双写+双机异步刷盘.drawio.svg)
 
 # 高级特性与面试常考场景
 
@@ -234,7 +234,7 @@
   - `SYNC_FLUSH + SYNC_MASTER` 叠加下，吞吐由十万级 TPS 骤降至数千级，RT 百倍级飙升。
   - 仅适用于金融级 P0 核心链路（支付结算、资金清算等），常规业务应回退异步集群模式。
 
-<img src="C:\Users\86133\Desktop\学习\dio图表\SRE\RocketMQ-消息零丢失全链路.drawio.svg" alt="RocketMQ-消息零丢失全链路.drawio" style="zoom:80%;" />
+<img src="../dio图表/SRE/RocketMQ-消息零丢失全链路.drawio.svg" alt="RocketMQ-消息零丢失全链路.drawio" style="zoom:80%;" />
 
 ## 消息消费幂等性保证方案
 

@@ -29,7 +29,7 @@
 
 - **核心数据记录**
 
-  <img src="C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-15 224154.png" alt="屏幕截图 2026-01-15 224154" style="zoom: 50%;" />
+  <img src="../../../dio图表/MicroService/屏幕截图 2026-01-15 224154.png" alt="屏幕截图 2026-01-15 224154" style="zoom: 50%;" />
 
   - QPS达到25k+时系统依然保持稳定；
   - 平均延迟：1.49ms；
@@ -55,7 +55,7 @@
 
 - **核心数据记录**
 
-  <img src="C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-16 164746.png" alt="屏幕截图 2026-01-16 164746" style="zoom:50%;" />
+  <img src="../../../dio图表/MicroService/屏幕截图 2026-01-16 164746.png" alt="屏幕截图 2026-01-16 164746" style="zoom:50%;" />
 
   - 并发请求数：500个
 
@@ -177,7 +177,7 @@
 
 - **核心数据记录**
 
-  <img src="C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-16 223221.png" alt="屏幕截图 2026-01-16 223221" style="zoom: 50%;" />
+  <img src="../../../dio图表/MicroService/屏幕截图 2026-01-16 223221.png" alt="屏幕截图 2026-01-16 223221" style="zoom: 50%;" />
 
   <img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260116224443270.png" alt="image-20260116224443270" style="zoom:50%;" />
 
@@ -261,7 +261,7 @@
 
    - **错误示意图**
 
-     ![product_catalog-lazy load vs worker.drawio](C:\Users\86133\Desktop\学习\dio图表\MicroService\product_catalog-lazy load vs worker.drawio.svg)
+     ![product_catalog-lazy load vs worker.drawio](../../../dio图表/MicroService/product_catalog-lazy load vs worker.drawio.svg)
 
    - 配置文件改进
 
@@ -287,7 +287,7 @@
 
 1. **极限吞吐量测试**
 
-   <img src="C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-18 191820.png" alt="屏幕截图 2026-01-18 191820" style="zoom:50%;" />
+   <img src="../../../dio图表/MicroService/屏幕截图 2026-01-18 191820.png" alt="屏幕截图 2026-01-18 191820" style="zoom:50%;" />
 
    - 最大RPS：2000；
 
@@ -295,15 +295,15 @@
 
    - **削峰效果：**在压测期间，成功把10万次写库请求聚合为96次MySQL批量更新。
 
-     <img src="C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-18 195143.png" alt="屏幕截图 2026-01-18 195143" style="zoom:50%;" />
+     <img src="../../../dio图表/MicroService/屏幕截图 2026-01-18 195143.png" alt="屏幕截图 2026-01-18 195143" style="zoom:50%;" />
 
 2. **客户端与服务端延迟差异分析**
 
    在高并发压测中，观测到客户端 (`ghz`) 报告的 P99 延迟约为 **150ms**，而服务端 (`Jaeger`) 报告的 P99 仅为 **50ms** 左右。
 
-   <img src="C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-18 200210.png" alt="屏幕截图 2026-01-18 200210" style="zoom:50%;" />
+   <img src="../../../dio图表/MicroService/屏幕截图 2026-01-18 200210.png" alt="屏幕截图 2026-01-18 200210" style="zoom:50%;" />
 
-   ![屏幕截图 2026-01-18 200240](C:\Users\86133\Desktop\学习\dio图表\MicroService\屏幕截图 2026-01-18 200240.png)
+   ![屏幕截图 2026-01-18 200240](../../../dio图表/MicroService/屏幕截图 2026-01-18 200240.png)
 
    - Jaeger Trace 显示，一旦请求进入业务处理函数，耗时极短。
 

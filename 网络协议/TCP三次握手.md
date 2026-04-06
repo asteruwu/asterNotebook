@@ -4,7 +4,7 @@
 
 
 
-![TCP_IP.dio-TCP三次握手.drawio](C:\Users\86133\Desktop\学习\dio图表\SRE\TCP_IP.dio-TCP三次握手.drawio.svg)
+![TCP_IP.dio-TCP三次握手.drawio](../dio图表/SRE/TCP_IP.dio-TCP三次握手.drawio.svg)
 
 
 
