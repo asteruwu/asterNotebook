@@ -45,7 +45,7 @@ $ git clone [url]
 ***将远程仓库改动合并到本地**
 
 ```bash
-$ git pull --rebase origin master
+$ git pull --rebase origin main
 ```
 
 **4.提交到远程仓库；**
