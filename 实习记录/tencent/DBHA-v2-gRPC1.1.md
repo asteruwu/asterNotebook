@@ -1,52 +1,56 @@
-# DBHA-v2 gRPC 直连通道功能扩展设计文档
-
 项目根目录：./blueking-dbm/dbm-services/common/dbha-v2
 
-# 0. 需求与目标
+# 1. 协议
 
-1. **接口定义**
+## 1.1 目标
 
-   - **协议**
-      
-      新增单向流 RPC 方法（保留旧 PushData，兼容现有逻辑）；server 不返回业务响应
+- 新增`probe -> receiver`单向流式上报 RPC
+   - 保留现有`PushData`
 
-   - **消息体字段结构**
-   
-      采用 envelope + payload 结构：
-      
-      - envelope 携带 client_id、send_time；
-      - payload 为 HarvestData 的 JSON 序列化；
-      - receiver 复用现有反序列化逻辑
+## 1.2 RPC定义
 
-2. **server 端连接管理**
+通信形式
 
-   - **连接数**
-      
-      - 最大连接数可在配置中设置；
-      - 达到上限后拒绝新连接并告警；
+## 1.3 消息模型
 
-   - **可观测性**
+字段用途
 
-      - 全局统计连接总数；
-      - 接收消息数、接收字节数、错误数按 client_id label 分组，暴露为 Prometheus metrics；
-      - 队列满时丢弃消息，记录丢弃次数并监控，达到阈值告警；
+- 采用`envelope + payload`
+   - `envelope` 字段设计
+      - `client_id` 客户端标识，跨重连不变；
+         - 此处仍需关注 `client_id` 语义及生成机制。不可以是临时或随机短期值。
+      - `sequence_id` 单 client 递增，保证数据最新；
+      - `payload`
+         - `HarvestData` 的 JSON bytes
 
-3. **错误处理**
+# 2. 错误处理
 
-   - **client**
+错误预判 + 应对措施
 
-      - 连接错误
+1. 建立连接
+2. 信息发送与传达
+3. 资源限制
 
-         - client 可从错误中区分「连接数超限」与其他错误以决定后续行为；
-         - **连接数超限**：待考虑
-         - 其他错误：沿用现有指数退避重连；
+## 2.1 server
 
-      - 消息发送错误
-      
-         - 重试；达到最大重复次数后丢弃并告警记录；
 
-   - **server**
+## 2.2 client
 
-      - 连接错误
 
-         - 接收失败记录日志并关闭当前连接，不影响其他连接。
+# 3. 监控告警
+
+可观测性
+
+## 日志
+
+## 指标
+
+### label
+
+## 告警
+
+具体场景
+
+# 4. 待确认项：
+
+流量治理、幂等与一致性
