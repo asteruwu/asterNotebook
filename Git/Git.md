@@ -119,3 +119,21 @@ git branch [branch-name]
 $ git branch dev
 ```
 
+### 将当前分支的提交 rebase 合入主分支
+
+```bash
+#更新主分支
+$ git checkout main
+$ git pull origin main
+
+#将主分支变基到当前分支
+$ git checkout <current branch>
+$ git rebase main
+
+#合并
+$ git checkout main
+$ git merge <current branch>
+
+#推送
+$ git push origin main
+```
