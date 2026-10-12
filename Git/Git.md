@@ -55,55 +55,7 @@ $ git remote add origin [远程仓库url]
 $ git push -u origin master
 ```
 
-
-
-# 文件操作
-
-## 常用命令
-
-```bash
-#查看文件状态
-$ git status
-On branch master
-
-No commits yet
-
-Untracked files:#没有被追踪的文件
-  (use "git add <file>..." to include in what will be committed)
-        hello.txt 
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-#提交到暂存区后再查看状态
-$ git add .
-
-$ git status
-On branch master
-
-No commits yet
-
-Changes to be committed:#已添加新文件
-  (use "git rm --cached <file>..." to unstage)
-        new file:   hello.txt
-
-#将暂存区文件提交到本地仓库
-$ git commit -m "new file hello.txt"#-m 提交信息
-[master (root-commit) 4248062] new file hello.txt
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 hello.txt
-```
-
-# 分支
-
-## 类型
-
-- ### **master：**主分支
-
-- ### **dev：**开发用分支
-
-- ### **v4.0：**不同版本分支
-
-## 常用命令
+# 常用命令
 
 ```bash
 #查看本地的所有分支
@@ -136,4 +88,45 @@ $ git merge <current branch>
 
 #推送
 $ git push origin main
+```
+
+### 将当前分支未提交代码 copy 到新分支（用于测试）
+
+```bash
+# 记下当前分支名，并确认改动
+git branch --show-current
+git status --short
+
+# 暂存已跟踪改动和未跟踪文件
+git stash push -u -m "save local work for remote test"
+
+# 从当前分支创建测试分支，并恢复改动
+git checkout -b test/<测试分支名>
+git stash apply "stash@{0}"
+
+# 在测试分支提交并推送
+git add <需要提交的文件>
+git commit -m "<提交说明>"
+git push -u origin test/<测试分支名>
+
+# 在当前分支弹出未提交文件
+git stash apply "stash@{0}"
+```
+
+### 修改最近一次 commit 的信息
+
+```bash
+# 1. 修改信息
+git commit --amend -m "新的提交信息"
+# 或者不加 -m，会打开编辑器让你改
+
+# 2. 强推覆盖远程
+git push --force-with-lease origin feat/mock-server-initialize
+```
+
+### 查看/修改个人信息
+
+```bash
+git config --global user.name  # "new name"
+git config --global user.email # "new email"
 ```
