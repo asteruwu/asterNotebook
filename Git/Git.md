@@ -130,3 +130,16 @@ git push --force-with-lease origin feat/mock-server-initialize
 git config --global user.name  # "new name"
 git config --global user.email # "new email"
 ```
+
+### 修改已发布分支名
+
+```bash
+# 1. 切换到该分支，更改名字
+git branch -m new-name
+
+# 2. 推送到远程
+git push origin -u new-name
+
+# 3. 删除远程旧分支
+git push origin --delete old-name
+```
