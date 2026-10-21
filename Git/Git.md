@@ -143,3 +143,21 @@ git push origin -u new-name
 # 3. 删除远程旧分支
 git push origin --delete old-name
 ```
+
+### 同步前序分支的代码
+
+假设分支 B 从分支 A fork 得到，现在分支 A 有新的 commit 更新，需要将该 commit 同步到分支 B。
+
+```bash
+# 1. 确保拿到远程 A 的最新提交
+git fetch origin
+
+# 2. 切到 B
+git checkout B
+
+# 3. 把 B 的提交 rebase 到 origin/A 之后
+git rebase origin/A
+
+# 4. 强制推送
+git push --force-with-lease origin B
+```
