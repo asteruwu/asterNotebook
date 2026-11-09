@@ -1,0 +1,46 @@
+<mxfile host="Electron">
+  <diagram name="第 1 页" id="FQENPI4OKBq-CNNamYG1">
+    <mxGraphModel dx="414" dy="536" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8sueIi2VmUBfTJxcMRCo-2" edge="1" parent="1" source="8sueIi2VmUBfTJxcMRCo-1" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;startArrow=classic;startFill=1;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8sueIi2VmUBfTJxcMRCo-3" edge="1" parent="1" source="8sueIi2VmUBfTJxcMRCo-1" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8sueIi2VmUBfTJxcMRCo-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;align=center;verticalAlign=top;" value="&lt;div&gt;$$\sum$$&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="50" x="340" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="8sueIi2VmUBfTJxcMRCo-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="$$X(t)$$" vertex="1">
+          <mxGeometry height="30" width="60" x="115" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="8sueIi2VmUBfTJxcMRCo-6" edge="1" parent="1" source="8sueIi2VmUBfTJxcMRCo-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;startArrow=classic;startFill=1;endFill=0;">
+          <mxGeometry relative="1" x="-0.0286" as="geometry">
+            <mxPoint x="160" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8sueIi2VmUBfTJxcMRCo-7" edge="1" parent="1" source="8sueIi2VmUBfTJxcMRCo-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="8sueIi2VmUBfTJxcMRCo-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8sueIi2VmUBfTJxcMRCo-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="$$延时T$$" vertex="1">
+          <mxGeometry height="40" width="90" x="220" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="8sueIi2VmUBfTJxcMRCo-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="$$+$$" vertex="1">
+          <mxGeometry height="30" width="60" x="295" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="8sueIi2VmUBfTJxcMRCo-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="$$-$$" vertex="1">
+          <mxGeometry height="30" width="60" x="315" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="8sueIi2VmUBfTJxcMRCo-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="$$Y(t)$$" vertex="1">
+          <mxGeometry height="30" width="60" x="435" y="305" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
